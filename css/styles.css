@@ -1,0 +1,412 @@
+/* General Styles */
+body {
+    font-family: 'Saira', sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header Section */
+header {
+    background: linear-gradient(to right, #2e1f27, #c40e05);
+    color: #fff;
+    padding: 10px 20px; /* Reduced padding for a slimmer header */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: #f5f8de 3px solid;
+}
+
+header .logo {
+    max-width: 100px; /* Smaller logo for a compact look */
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-left: 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    font-size: 1rem; /* Slimmer font size for navigation items */
+}
+
+header nav ul li a:hover {
+    color: #f5f8de;
+}
+
+/* Main Landing Section */
+.main-landing {
+    background: linear-gradient(to right, rgba(38, 96, 164, 0.8), rgba(255, 248, 240, 0.9)), url("../assets/Logos-and-Fonts/FINAL - Prime-Logo/JPEG/PRIME-LOGO-ColorOnWhite landscape.jpg") no-repeat center center/cover;
+    color: #fff;
+    padding: 150px 0;
+    text-align: center;
+}
+
+.main-landing h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.main-landing p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background: #c40e05;
+    color: #fff;
+    padding: 12px 25px; /* Adjusted padding for better vertical alignment */
+    border: none;
+    text-decoration: none;
+    transition: background 0.3s ease;
+    border-radius: 5px;
+    font-size: 1.2rem; /* Ensure font size fits comfortably */
+    display: inline-block; /* Ensures the button behaves properly */
+    line-height: 1.5; /* Adjusted line height for centering text */
+    text-align: center;
+}
+
+.cta-button:hover {
+    background: #2e1f27;
+}
+
+
+/* About Us Section */
+.about-us {
+    background-color: #f5f8de;
+    padding: 60px 0;
+    color: #2e1f27;
+    border-top: #c40e05 4px solid;
+}
+
+.about-us h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #c40e05;
+}
+
+.about-us h3 {
+    font-size: 1.8rem;
+    margin-top: 20px;
+}
+
+.about-us p {
+    margin-bottom: 15px;
+}
+
+/* Investment Opportunity Section */
+.investment-opportunity {
+    background: linear-gradient(to right, #2660a4, #fff8f0);
+    padding: 60px 0;
+    color: #fff;
+    text-align: center;
+}
+
+.investment-opportunity h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #fff8f0;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.card {
+    flex: 1 1 calc(33% - 20px);
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    color: #2e1f27;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card h3 {
+    color: #c40e05;
+}
+
+/* FAQs Section */
+.faqs {
+    background: #fff;
+    padding: 60px 0;
+    color: #333;
+}
+
+.faqs h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #2e1f27;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-item h3 {
+    font-size: 1.5rem;
+    color: #c40e05;
+}
+
+.faq-item p {
+    padding-left: 20px;
+    border-left: 3px solid #c40e05;
+    margin: 15px 0;
+}
+
+/* Contact Section */
+.contact {
+    background: #f8f8f8;
+    padding: 60px 0;
+    color: #333;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #2e1f27;
+    position: relative; /* Needed for the line placement */
+}
+
+.contact h2::after {
+    content: "";
+    display: block;
+    width: 80px; /* Adjust the width of the line */
+    height: 4px; /* Adjust the thickness of the line */
+    background: #c40e05; /* Match the theme color */
+    margin: 10px auto; /* Center the line horizontally */
+    border-radius: 2px; /* Rounded corners for the line */
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+}
+
+.contact form input,
+.contact form textarea,
+.contact form button {
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact form button {
+    background: #2660a4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact form button:hover {
+    background: #c40e05;
+}
+
+/* Footer */
+.footer {
+    background: #2e1f27;
+    color: #fff;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 30px;
+}
+
+.footer-logo {
+    max-width: 80px;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+/* General Image Styling */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Specific Section Image Styling */
+.team-image {
+    width: 300px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.investment-image {
+    width: 400px;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+.contact-image {
+    width: 200px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+/* General Section Heading Styling */
+.section-heading {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #2e1f27;
+    text-align: center;
+    position: relative;
+}
+
+.section-heading::after {
+    content: "";
+    display: block;
+    width: 80px; /* Width of the red line */
+    height: 4px; /* Thickness of the red line */
+    background: #c40e05; /* Red color for the line */
+    margin: 10px auto; /* Center the line */
+    border-radius: 2px; /* Rounded corners for a smooth look */
+}
+
+/* Specific Section Adjustments */
+.contact h2 {
+    margin-bottom: 0px;
+}
+
+.investment-opportunity h2,
+.faqs h2 {
+    margin-bottom: 0px;
+}
+
+
+/* Responsive Design */
+
+/* Ultra-Wide Screens */
+@media (min-width: 1600px) {
+    .main-landing h1 {
+        font-size: 4rem;
+    }
+
+    .cta-button {
+        font-size: 1.2rem;
+        padding: 20px 30px;
+    }
+}
+
+/* Regular Desktops */
+@media (min-width: 1024px) and (max-width: 1599px) {
+    .main-landing h1 {
+        font-size: 3.5rem;
+    }
+
+    .cta-button {
+        font-size: 1rem;
+        padding: 15px 25px;
+    }
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+    header .logo {
+        width: 120px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        flex: 1 1 100%;
+    }
+}
+
+/* Tablets and Mobile - Adjust Header */
+@media (max-width: 1023px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 10px;
+    }
+
+    header nav ul li {
+        margin: 5px 0;
+    }
+}
+
+
+/* Mobile Devices */
+@media (max-width: 767px) {
+    .main-landing h1 {
+        font-size: 2.5rem;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .cta-button {
+        font-size: 1rem;
+        padding: 12px 20px;
+    }
+
+    .about-us h2,
+    .investment-opportunity h2,
+    .faqs h2,
+    .contact h2 {
+        font-size: 2rem;
+    }
+
+    .footer-logo {
+        max-width: 60px;
+    }
+}
